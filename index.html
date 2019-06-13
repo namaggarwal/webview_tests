@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webview Test</title>
+  </head>
+  <body>
+    This is a Test
+    <div id="url"></div>
+    <script type="text/javascript">
+      (() => {
+        document.getElementById("url").innerHTML = window.location.hash
+      })()
+    </script>
+  </body>
+</html>
